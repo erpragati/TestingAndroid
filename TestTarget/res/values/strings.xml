@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TestTarget</string>
+    <string name="enter">Enter</string>
+    <string name="add">+</string>
+    <string name="sub">-</string>
+    <string name="mul">x</string>
+    <string name="div">/</string>
+    <string name="empty">&#8230;</string>
+    
+</resources>
