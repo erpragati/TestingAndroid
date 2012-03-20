@@ -1,3 +1,5 @@
+/* $Id: $
+ */
 package net.callmeike.android.testing;
 
 import java.util.Collections;
@@ -16,6 +18,9 @@ import net.callmeike.android.testing.calc.Calculator.CalculationException;
 
 /**
  * TestTargetActivity
+ *
+ * @version $Revision: $
+ * @author <a href="mailto:blake.meike@gmail.com">G. Blake Meike</a>
  */
 public class TestTargetActivity extends Activity implements Calculator.StackChangeListener {
     Calculator calc;
@@ -66,9 +71,7 @@ public class TestTargetActivity extends Activity implements Calculator.StackChan
     public void stackChanged(List<Integer> contents) {
         Collections.reverse(contents);
         StringBuilder str = new StringBuilder();
-        for (Integer n: contents) {
-            str.append(n).append("\n");
-        }
+        for (Integer n: contents) { str.append(n).append("\n"); }
         ((TextView) findViewById(R.id.top)).setText(str.toString());
     }
 
