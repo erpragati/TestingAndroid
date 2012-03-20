@@ -61,7 +61,6 @@ public class TestTargetActivity extends Activity implements Calculator.StackChan
             new Button.OnClickListener() {
                 @Override public void onClick(View v) { eval(Calculator.Op.DIV); }
             });
-
     }
 
     /**
